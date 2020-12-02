@@ -18,3 +18,12 @@ void traingleInt(int f1, int f2, int s1, int s2, int t1) {
     glVertex2i(s1, s2);
     glVertex2i(t1, s2);
 }
+
+//float 
+void triangleFloat(float v0, float v1, float v01_v1, float v2, float v21) {
+    glBegin(GL_TRIANGLES);
+    glVertex2f(v0, v01_v1);
+    glVertex2f(v1, v01_v1);
+    glVertex2f(v2, v21);
+    glEnd();
+}
